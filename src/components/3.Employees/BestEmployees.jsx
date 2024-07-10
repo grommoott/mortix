@@ -14,7 +14,7 @@ export default function BestEmployees() {
                 position: "relative",
             }}
         >
-            <div className="best-employees-yakor absolute -top-20 xl:-top-6"></div>
+            <div className="best-employees-yakor absolute -top-28 xl:-top-20"></div>
             <motion.h1
                 className="text-4xl sm:text-5xl lg:text-7xl text-center px-auto mx-4 mt-12 lg:mt-16 roboto-bold"
                 initial="hidden"
