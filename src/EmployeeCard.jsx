@@ -18,13 +18,13 @@ const transition = {
     ease: "easeInOut"
 }
 
-export default function EmployeeCard({ employee, selectedId, className }) {
+export default function EmployeeCard({ employee, animate, className }) {
     return <motion.img
             src={`/best-employees/${employee.id}.jpg`}
-            className={"w-64 h-96 m-16 object-cover rounded-2xl shadow-lg select-none " + className}
+            className={"w-48 h-72 xl:w-64 xl:h-96 my-16 mx-8 xl:mx-16 object-cover rounded-2xl shadow-lg select-none " + className}
             draggable="false"
             variants={variants}
-            animate={selectedId == employee.id ? "selected" : "idle"}
+            animate={animate}
             transition={transition}
         />
 }

@@ -44,31 +44,42 @@
 }
 
 .menu {
-	width: min-content;
+    width: min-content;
 
     @media screen and (max-width: 1279px) {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
     }
 
-	@media screen and (max-width: 767px) {
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: space-between;
-		width: 100%;
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
     }
 }
 
 .text-shadow {
     text-shadow: 0 0px 8px #00000080;
-                                     
 }
 
-.aboutImageBg {     
-    background: linear-gradient(#000000a0,#00000080,#000000cc);
+.aboutImageBg {
+    background: linear-gradient(#000000a0, #00000080, #000000cc);
 }
 
-.historyImageBg {     
-    background: linear-gradient(90deg, #000000cc,#00000040);
+.historyImageBg {
+    background: linear-gradient(90deg, #000000cc, #00000040);
+}
+
+.mainFooter {
+    display: grid;
+    grid-template-columns: 1fr 24rem 1fr;
+    grid-template-rows: 1fr;
+    padding: 1rem;
+
+    @media screen and not (min-width: 1024px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 9rem 1fr;
+    }
 }

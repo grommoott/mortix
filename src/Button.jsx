@@ -7,12 +7,12 @@ function Button({ type = "common", onClick, children }) {
     switch (type) {
         case "common":
             className =
-                "mx-3 shadow hover:shadow-lg rounded-lg border-none h-12 px-2 roboto-bold text-lg bg-orange-500 hover:bg-orange-600 active:bg-orange-700 duration-100 hover:rounded-xl"
+                "mx-3 uppercase shadow hover:shadow-lg rounded-lg border-none h-12 px-2 roboto-bold text-md bg-orange-500 hover:bg-orange-600 active:bg-orange-700 duration-100 hover:rounded-xl"
             break
 
         case "header":
             className =
-                "mx-3 shadow hover:shadow-lg border-black rounded-lg h-12 px-6 my-2 roboto-bold text-lg bg-orange-500 hover:bg-orange-600 active:bg-orange-700 duration-100 hover:rounded-xl"
+                "mx-3 uppercase shadow hover:shadow-lg border-black rounded-lg h-12 px-6 my-2 roboto-bold text-md bg-orange-500 hover:bg-orange-600 active:bg-orange-700 duration-100 hover:rounded-xl"
             break
     }
 

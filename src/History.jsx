@@ -1,12 +1,16 @@
+import { useEffect } from "react"
 import historyBg from "/history-bg.jpg"
+import useWindowWidth from "./hooks/useWindowWidth"
 
 export default function History() {
+    const width = useWindowWidth()
+
     return (
         <div className="overflow-hidden relative" style={{ height: "100vh" }}>
             <div className="flex flex-row h-full w-full justify-around absolute">
                 <div
                     className="flex flex-col justify-center items-center z-10 flex-shrink-0 "
-                    style={{ width: "60vw" }}
+                    style={{ width: width >= 1024 ? "60vw" : "90vw" }}
                 >
                     <h1
                         className="text-6xl lg:text-8xl text-shadow text-white roboto-bold p-1 lg:p-4"

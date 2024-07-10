@@ -4,18 +4,22 @@ import { useEffect, useState } from "react"
 import EmployeeInfo from "./EmployeeInfo"
 import EmployeeButton from "./EmployeeButton"
 import { useAnimate } from "framer-motion"
+import useWindowWidth from "./hooks/useWindowWidth"
 
 const transition = {
     duration: 0.4,
+    ease: "easeInOut"
 }
 
 export default function EmployeesList({ employees, length, offset }) {
     const [selectedId, setSelectedId] = useState(0)
     const [rawSelectedId, setRawSelectedId] = useState(0)
     const [scopeImages, animateImages] = useAnimate()
+    const width = useWindowWidth()
 
-    const imagesOffset = length % 2 == 0 ? 0 : -12
-    const step = (val) => val * length * 24 * 2 + "rem"
+    const cardWidth = width >= 1280 ? 24 : 16
+    const imagesOffset = length % 2 == 0 ? 0 : -cardWidth / 2
+    const step = (val) => val * length * cardWidth * 2 + "rem"
 
     useEffect(() => {
         animateImages(
@@ -23,7 +27,7 @@ export default function EmployeesList({ employees, length, offset }) {
             {
                 x: imagesOffset + "rem",
             },
-            {duration: 0}
+            { duration: 0 }
         )
     }, [])
 
@@ -34,13 +38,21 @@ export default function EmployeesList({ employees, length, offset }) {
         let stepsSecond = Math.floor((nextRaw / length + 0.5) / 2)
         let stepsFirst = Math.floor((nextRaw / length + 1.5) / 2)
 
-        animateImages(".images__firstHalf", {x: step(stepsFirst)}, {duration: 0})
-        animateImages(".images__secondHalf", {x: step(stepsSecond)}, {duration: 0})
+        animateImages(
+            ".images__firstHalf",
+            { x: step(stepsFirst) },
+            { duration: 0 }
+        )
+        animateImages(
+            ".images__secondHalf",
+            { x: step(stepsSecond) },
+            { duration: 0 }
+        )
 
         animateImages(
             scopeImages.current,
             {
-                x: nextRaw * -24 + imagesOffset + "rem",
+                x: nextRaw * -cardWidth + imagesOffset + "rem",
             },
             transition
         )
@@ -53,14 +65,15 @@ export default function EmployeesList({ employees, length, offset }) {
 
                 <div className="overflow-hidden">
                     <div
-                        className="flex flex-row justify-center" style={{width: "72rem"}}
+                        className="flex flex-row justify-center"
+                        style={{ width: width >= 900 ? width >= 1280 ? "72rem" : "48rem" : "16rem" }}
                         ref={scopeImages}
                     >
                         {employees.map((val, id) => (
                             <EmployeeCard
                                 employee={val}
                                 key={id}
-                                selectedId={selectedId}
+                                animate={selectedId == id ? "selected" : "idle"}
                                 className="images__firstHalf"
                             />
                         ))}
@@ -69,7 +82,7 @@ export default function EmployeesList({ employees, length, offset }) {
                             <EmployeeCard
                                 employee={val}
                                 key={id + employees.length}
-                                selectedId={selectedId}
+                                animate={selectedId == id ? "selected" : "idle"}
                                 className="images__secondHalf"
                             />
                         ))}

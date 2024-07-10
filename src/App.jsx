@@ -5,16 +5,18 @@ import Header from "./Header"
 import { AnimatePresence, useAnimate } from "framer-motion"
 import Menu from "./Menu"
 import BestEmployees from "./BestEmployees"
-
+import Connection from "./Connection"
+import Footer from "./Footer"
 
 export default function App() {
-
     return (
         <>
             <Header />
             <About />
             <History />
-            <BestEmployees/>
+            <BestEmployees />
+            <Connection />
+            <Footer />
         </>
     )
 }
