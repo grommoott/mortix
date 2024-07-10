@@ -10,7 +10,7 @@ export default function About() {
             <div className="flex flex-col justify-center items-center absolute w-full h-full z-10 mt-12">
                 <img
                     src={fullLogo}
-                    className="pt-10 h-32 sm:h-48 lg:h-72 xl:h-96 select-none"
+                    className="pt-10 h-40 sm:h-60 lg:h-72 xl:h-96 select-none"
                     draggable="false"
                 />
                 <h1
