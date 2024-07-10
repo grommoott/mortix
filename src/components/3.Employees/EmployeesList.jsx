@@ -1,10 +1,10 @@
 import PropTypes from "prop-types"
-import EmployeeCard from "./EmployeeCard"
+import EmployeeCard from "@employees/EmployeeCard"
 import { useEffect, useState } from "react"
-import EmployeeInfo from "./EmployeeInfo"
-import EmployeeButton from "./EmployeeButton"
+import EmployeeInfo from "@employees//EmployeeInfo"
+import EmployeeButton from "@employees//EmployeeButton"
 import { useAnimate } from "framer-motion"
-import useWindowWidth from "./hooks/useWindowWidth"
+import useWindowWidth from "@hooks/useWindowWidth"
 
 const transition = {
     duration: 0.4,

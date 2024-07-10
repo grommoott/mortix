@@ -1,5 +1,4 @@
 import PropTypes from "prop-types"
-import { useEffect } from "react"
 import { motion } from "framer-motion"
 
 const variants = {
@@ -21,7 +20,7 @@ const transition = {
 export default function EmployeeCard({ employee, animate, className }) {
     return <motion.img
             src={`/best-employees/${employee.id}.jpg`}
-            className={"w-48 h-72 xl:w-64 xl:h-96 my-16 mx-8 xl:mx-16 object-cover rounded-2xl shadow-lg select-none " + className}
+            className={"w-48 h-72 xl:w-64 xl:h-96 mb-8 mt-8 mx-8 xl:mx-16 object-cover rounded-2xl shadow-lg select-none " + className}
             draggable="false"
             variants={variants}
             animate={animate}

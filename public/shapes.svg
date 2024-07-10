@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created using Krita: https://krita.org -->
+<svg xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:krita="http://krita.org/namespaces/svg/krita"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    width="614.4pt"
+    height="240pt"
+    viewBox="0 0 614.4 240">
+<defs>
+  <linearGradient id="gradient0" gradientUnits="objectBoundingBox" x1="0.507342156888919" y1="-0.0386266090583396" x2="0.507342156888919" y2="0.784334766090937" spreadMethod="pad">
+   <stop stop-color="#cccccc" offset="0" stop-opacity="1"/>
+   <stop stop-color="#b2b2b2" offset="1" stop-opacity="1"/>
+  </linearGradient>
+  <linearGradient id="gradient1" gradientUnits="objectBoundingBox" x1="0.498583706930692" y1="0.043269229439407" x2="0.499458503644187" y2="0.983173077591717" spreadMethod="pad">
+   <stop stop-color="#b2b2b2" offset="0" stop-opacity="1"/>
+   <stop stop-color="#999999" offset="1" stop-opacity="1"/>
+  </linearGradient>
+  <linearGradient id="gradient2" gradientUnits="objectBoundingBox" x1="0.501113584713602" y1="0.0258480923498103" x2="0.501113584713602" y2="0.711093148810203" spreadMethod="pad">
+   <stop stop-color="#999999" offset="0" stop-opacity="1"/>
+   <stop stop-color="#808080" offset="1" stop-opacity="1"/>
+  </linearGradient>
+ </defs>
+<path id="shape0" transform="translate(-18.9599909956025, 71.2799980234359)" fill="url(#gradient0)" fill-rule="evenodd" stroke="none" stroke-width="74.0352" stroke-linecap="square" stroke-linejoin="bevel" d="M14.4 5.76L46.08 27.36L94.08 0L147.36 27.36L198.24 7.2L232.8 30.24L262.08 7.2L299.52 32.16L372.96 16.32L391.68 33.6L454.08 11.52L493.44 32.64L538.08 10.56L576.48 31.68L619.2 10.56L653.76 30.72L652.8 223.68L0 200.64C0 200.64 4.8 135.68 14.4 5.76Z" sodipodi:nodetypes="ccccccccccccccccccc"/><path id="shape01" transform="translate(-79.4400002060088, 111.360000246764)" fill="url(#gradient1)" fill-rule="evenodd" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" d="M63.36 51.84L122.88 27.84L164.64 0L193.92 26.88L253.92 14.4L273.12 34.08L337.92 17.76L415.2 36.96L484.8 8.16L538.56 41.28L618.24 8.16L642.72 36.96L668.16 8.16L716.64 40.32C730.4 116.48 736.64 156.32 735.36 159.84C734.08 163.36 601.28 173.92 336.96 191.52L224.16 189.6L55.2 199.68L0 128.16C0.32 128.16 21.44 102.72 63.36 51.84Z" sodipodi:nodetypes="cccccccccccccczccccc"/><path id="shape011" transform="translate(-16.8000000365079, 162.720000353605)" fill="url(#gradient2)" fill-rule="evenodd" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" d="M0 44.64L38.88 9.6L82.08 42.24L138.72 11.52L205.92 36.96L237.12 14.88L273.12 40.8L324 0L357.6 29.28L430.56 3.36L477.12 34.56L520.8 14.4L564.48 31.2L622.56 17.76L646.56 34.08L643.2 109.92C425.6 111.52 311.2 111.84 300 110.88C288.8 109.92 194.4 105.28 16.8 96.96C15.52 96.96 9.92 79.52 0 44.64Z" sodipodi:nodetypes="cccccccccccccccczcc"/>
+</svg>

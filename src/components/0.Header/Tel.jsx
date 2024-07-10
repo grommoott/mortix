@@ -1,4 +1,4 @@
-import config from "./config"
+import config from "@data/tel"
 
 export default function Tel({className}) {
     return (

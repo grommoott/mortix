@@ -1,5 +1,4 @@
 import PropTypes from "prop-types"
-import { useMemo } from "react"
 
 function Button({ type = "common", onClick, children }) {
     let className
@@ -12,7 +11,12 @@ function Button({ type = "common", onClick, children }) {
 
         case "header":
             className =
-                "mx-3 uppercase shadow hover:shadow-lg border-black rounded-lg h-12 px-6 my-2 roboto-bold text-md bg-orange-500 hover:bg-orange-600 active:bg-orange-700 duration-100 hover:rounded-xl"
+                "mx-3 uppercase shadow hover:shadow-lg border-white rounded-lg text-white h-12 px-6 my-2 roboto-bold text-md bg-zinc-900 active:text-zinc-900 active:bg-white duration-100 hover:rounded-xl"
+            break
+
+        case "menu":
+            className =
+                "m-4 w-full uppercase shadow hover:shadow-lg border-white rounded-lg text-white h-12 px-6 my-2 roboto-bold text-md bg-zinc-900 active:text-zinc-900 active:bg-white duration-100 hover:rounded-xl"
             break
     }
 
@@ -27,7 +31,7 @@ function Button({ type = "common", onClick, children }) {
     )
 }
 Button.propTypes = {
-    type: PropTypes.oneOf(["header", "common"]),
+    type: PropTypes.oneOf(["header", "common", "menu"]),
     onClick: PropTypes.func,
 }
 

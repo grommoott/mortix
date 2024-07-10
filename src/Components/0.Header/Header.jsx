@@ -1,11 +1,11 @@
 import Button from "./Button"
-import fullLogo from "/fullLogo.png"
-import config from "./config"
+import fullLogo from "/fullLogoWhite.png"
+import config from "../../data/tel"
 import { useState, useEffect, useRef } from "react"
 import MenuButton from "./MenuButton"
 import { motion, AnimatePresence } from "framer-motion"
-import Tel from "./Tel"
-import Menu from "./Menu"
+import Tel from "../../Tel"
+import Menu from "../../Menu"
 import HeaderButtons from "./HeaderButtons"
 
 export default function Header() {
@@ -20,8 +20,8 @@ export default function Header() {
 
     return (
         <header
-            className="fixed z-50 w-full bg-orange-500 h-25 flex flex-col xl:flex-row items-center justify-start duration-200 overflow-hidden "
-            style={{ borderBottom: "3px black solid" }}
+            className="fixed z-50 w-full bg-zinc-900 h-25 flex flex-col xl:flex-row items-center justify-start duration-200 overflow-hidden "
+            // style={{ borderBottom: "3px black solid" }}
         >
             <div className="menu xl:w-auto">
                 <MenuButton
@@ -35,21 +35,22 @@ export default function Header() {
                     src={fullLogo}
                     className="xl:mx-4 mx-auto my-auto h-24 xl:h-16 hover:cursor-pointer hover:scale-110 active:scale-125 duration-100 select-none object-cover"
                     draggable="false"
+                    onClick={() => window.scrollTo({behavior: "smooth", top: 0})}
                 />
 
-                <Tel className="ml-auto my-auto hidden md:block xl:hidden" />
+                <Tel className="ml-auto my-auto hidden md:block xl:hidden text-white" />
             </div>
 
             <div className="flex-grow"></div>
 
             {windowWidth >= 1280 && <HeaderButtons />}
             {windowWidth < 1280 && (
-                <Menu animate={isMenuVisible ? "show" : "hide"} className="z-10" />
+                <Menu animate={isMenuVisible ? "show" : "hide"} className="z-10" setIsMenuVisible={setIsMenuVisible} />
             )}
 
             <div className="flex-grow"></div>
 
-            <Tel className="hidden xl:block" />
+            <Tel className="hidden xl:block text-white" />
         </header>
     )
 }

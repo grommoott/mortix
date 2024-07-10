@@ -1,4 +1,4 @@
-import menu from "/menu.svg"
+import menu from "/menuWhite.svg"
 
 export default function MenuButton({onClick, className}) {
     return (

@@ -83,3 +83,29 @@
         grid-template-rows: 1fr 9rem 1fr;
     }
 }
+
+.historyPage {
+    width: 40rem;
+    height: 15rem;
+
+    @media screen and not (min-width: 1024px) {
+        width: 30rem;
+        height: 20rem;
+    }
+
+    @media screen and not (min-width: 640px) {
+        width: 20rem;
+        height: 25rem;
+    }
+}
+
+.connections {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    @media screen and not (min-width: 1280px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}

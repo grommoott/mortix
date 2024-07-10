@@ -9,7 +9,7 @@ export default function EmployeeButton({ type, addSelectedId }) {
     return (
         <img
             src={type === "left" ? arrowLeft : arrowRight}
-            className="h-8 sm:h-12 hover:scale-110 active:scale-125 duration-100 opacity-50 m-1 sm:m-2"
+            className="h-8 sm:h-12 hover:scale-110 active:scale-125 duration-100 opacity-50 m-1 sm:m-2 cursor-pointer"
             onClick={() => {
                 if (coolDown) {
                     addSelectedId(type === "left" ? -1 : 1)

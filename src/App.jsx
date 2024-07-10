@@ -1,12 +1,9 @@
-import { useState } from "react"
-import About from "./About"
-import History from "./History"
-import Header from "./Header"
-import { AnimatePresence, useAnimate } from "framer-motion"
-import Menu from "./Menu"
-import BestEmployees from "./BestEmployees"
-import Connection from "./Connection"
-import Footer from "./Footer"
+import About from "@about/About"
+import History from "@history/History"
+import Header from "@header/Header"
+import BestEmployees from "@employees/BestEmployees"
+import Connection from "@connection/Connection"
+import Footer from "@footer/Footer"
 
 export default function App() {
     return (
